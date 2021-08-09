@@ -12,6 +12,8 @@ function setClock() {
   } else {
     meridiem = "AM";
   }
-  clockEl.innerText = `${hour}:${minute}:${second} ${meridiem}`;
+  clockEl.innerText = `${hour >= 10 ? hour : "0" + hour}:${
+    minute >= 10 ? minute : "0" + minute
+  }:${second >= 10 ? second : "0" + second} ${meridiem}`;
 }
 setInterval(setClock, 1000);
