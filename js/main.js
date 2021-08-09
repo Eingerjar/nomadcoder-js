@@ -17,3 +17,12 @@ function setClock() {
   }:${second >= 10 ? second : "0" + second} ${meridiem}`;
 }
 setInterval(setClock, 1000);
+
+// login
+const loginEl = document.querySelector(".login form");
+const loginInputEl = loginEl.querySelector("input");
+loginEl.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = loginInputEl.value;
+  localStorage.setItem("name", `${name}`);
+});
