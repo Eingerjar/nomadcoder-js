@@ -11,9 +11,8 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     videoId: "_ITiwPMUzho",
     playerVars: {
-      autoplay: true,
-      loop: true,
-      playlist: "_ITiwPMUzho",
+      autoplay: 1,
+      mute: 1,
     },
   });
 }
