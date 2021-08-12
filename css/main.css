@@ -1,3 +1,4 @@
+/* YOUBUE BACKGROUND */
 * {
   box-sizing: border-box;
 }
@@ -74,4 +75,22 @@
   .vid-info .acronym {
     display: none;
   }
+}
+
+.inner {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  width: 1100px;
+  height: 700px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.clock {
+}
+.login {
 }
