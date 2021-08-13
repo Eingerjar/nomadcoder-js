@@ -88,9 +88,13 @@
   right: 0;
   margin: auto;
   border-radius: 20px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .clock {
+  display: none;
 }
 .login {
+  display: none;
 }
